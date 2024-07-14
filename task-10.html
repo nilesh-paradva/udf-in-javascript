@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <th>before swapping</th>
+            <th>after swapping</th>
+        </tr>
+        <tr>
+            <td id="before" align="center"></td>
+            <td id="after" align="center"></td>
+        </tr>
+    </table>
+    <script>
+        
+        function swapping(a, b) {
+
+            // console.log("Before swapping: ", a,b);
+            document.getElementById("before").innerHTML = "a = " + a + ", b =" + b;
+
+            [a, b] = [b, a];
+
+            // console.log("After swapping: ", a,b);
+            document.getElementById("after").innerHTML = "a = " + a + ", b =" + b;
+
+        }
+
+        
+        let a = parseInt(prompt("enter Your Number a:-"));
+        let b = parseInt(prompt("enter Your Number b:-"));
+
+
+        swapping(a,b);
+
+    </script>
+</body>
+
+</html>

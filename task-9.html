@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="0" cellpadding="8">
+        <tr>
+            <th>Even Number</th>
+            <th>Odd Number</th>
+        </tr>
+        <tr>
+            <td id="even" align="center"></td>
+            <td id="odd" align="center"></td>
+        </tr>
+    </table>
+    <script>
+
+        function number(num) {
+
+            if (num % 2 === 0) {
+
+                // console.log(num + " is even.");
+                document.getElementById("even").innerHTML = num;
+
+            } else {
+
+                // console.log(num + " is odd.");
+                document.getElementById("odd").innerHTML = num;
+
+            }
+
+        }
+
+        let a = parseInt(prompt("enter Your Number"));
+        number(a); 
+
+    </script>
+</body>
+
+</html>
